@@ -21,15 +21,13 @@ SITE_ROOT = PROJECT_ROOT
 MEDIA_ROOT = os.path.join(SITE_ROOT)
 MEDIA_URL = '/Images/'
 
-STATIC_ROOT = os.path.join(SITE_ROOT, 'staticfiles')
+STATIC_ROOT = os.path.join(SITE_ROOT, 'static')
 STATIC_URL = '/static/'
-
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
-    os.path.join(SITE_ROOT, 'static'),
+    os.path.join(SITE_ROOT, 'staticfiles'),
 )
 
 # Quick-start development settings - unsuitable for production
@@ -55,9 +53,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main_app',
     'registration',
+    'api',
     'profile',
     'feedback',
-    'api',
 ]
 
 MIDDLEWARE_CLASSES = [

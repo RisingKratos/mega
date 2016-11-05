@@ -1,1 +1,1 @@
-web: python manage.py collectstatic --noinput
+web: gunicorn mega.wsgi --log-file -
