@@ -1,5 +1,4 @@
 autopep8==1.2.4
-setuptools==0.7.3
 colorama==0.3.7
 coverage==4.2
 defusedxml==0.4.1
@@ -43,4 +42,3 @@ requests-oauthlib==0.6.1
 selenium==2.53.6
 six==1.10.0
 splinter==0.7.3
-virtualenv==15.0.1
