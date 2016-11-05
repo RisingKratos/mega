@@ -9,4 +9,4 @@ def login_api_view(request, email, password):
     if user is not None:
         login(request, user)
         return JsonResponse({"Exists" : "yes"})
-    return redirect("index")
+    return JsonResponse({"Exists" : "no"})
