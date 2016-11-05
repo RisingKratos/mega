@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'registration',
     'profile',
     'feedback',
+    'api',
 ]
 
 MIDDLEWARE_CLASSES = [

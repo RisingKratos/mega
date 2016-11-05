@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^profile/', include('profile.urls')),
     url(r'^auth/', include('registration.urls')),
     url(r'^feedback/', include('feedback.urls')),
+    url(r'^api/', include('api.urls')),
 ]
