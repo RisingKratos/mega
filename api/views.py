@@ -8,5 +8,5 @@ def login_api_view(request, email, password):
     user = authenticate(username=email, password=password)
     if user is not None:
         login(request, user)
-        return JsonResponse({"Exists" : "yes"})
-    return JsonResponse({"Exists" : "no"})
+        return JsonResponse({"value" : "true"})
+    return JsonResponse({"value" : "false"})
