@@ -1,0 +1,367 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+@font-face {
+    font-family: 'icon-worksregular';
+    src: url('icon-works-webfont.eot');
+    src: url('icon-works-webfont.eot?#iefix') format('embedded-opentype'),
+         url('icon-works-webfont.woff') format('woff'),
+         url('icon-works-webfont.ttf') format('truetype'),
+         url('icon-works-webfont.svg#icon-worksregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+label, a, li,
+.btn {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+html h1, html h2, html h3, html h4, html h5, html h6 {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  margin-bottom: 60px;
+  overflow-x: hidden;
+}
+
+.navbar-top {
+  background-color: #2DA89C;
+  width: 100%;
+  padding: 0 20%;
+}
+
+.navbar-top a {
+  color: rgb(255,255,255);
+}
+
+.navbar-top a:hover {
+  color: rgb(255,255,255);
+  background-color: #2DA89C;
+}
+
+.nav.navbar-nav {
+  float: right;
+}
+
+.nav.navbar-nav a:hover {
+  color: rgb(220,222,172);
+  background-color: #2DA89C;
+}
+
+.banner {
+  padding: 15% 30%;
+  background-image: url(../images/bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+
+.banner h2 {
+  font-size: 80px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.banner p {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.about {
+  padding: 6% 15% 14% 15%;
+  background-color: #2DA89C;
+}
+
+.about h1 {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(215, 255, 247);
+  margin-bottom: 5%;
+}
+
+.about td {
+  padding: 0 5%;
+  text-align: center;
+}
+
+.about h3 {
+  color: rgb(193, 233, 225);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.about p {
+  color: rgb(215, 255, 247);
+  font-weight: 300;
+}
+
+.icons {
+  font-family: 'icon-worksregular';
+  font-size: 80px;
+  color: rgb(255, 255, 255);
+}
+
+.company-box {
+  padding: 8% 18% 13% 18%;
+}
+
+.companies img {
+  width: 100%;
+  -webkit-filter: saturate(30%);
+  filter: saturate(30%);
+}
+
+.companies img:hover {
+  -webkit-filter: saturate(100%);
+  filter: saturate(100%);
+}
+
+.companies h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 6%
+}
+
+.companies td {
+  padding: 3%;
+  width: 33%;
+}
+
+.specs {
+  background-color: #2DA89C;
+}
+
+.specs-box {
+  padding: 8% 20% 13% 20%;
+}
+
+.specs h1 {
+  font-size: 50px;
+  margin-bottom: 6%;
+  text-align: center;
+  color: rgb(215, 255, 247);
+}
+
+.specs table {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+}
+
+.specs img {
+  width: 100%;
+}
+
+.specs-box label {
+  position: absolute;
+  width: 13.8%;
+  text-align: center;
+  padding: 6.5% 0;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.specs td {
+  padding: 1%;
+  -webkit-filter: saturate(50%);
+  filter: saturate(50%);
+}
+
+.specs td:hover {
+  -webkit-filter: saturate(100%);
+  filter: saturate(100%);
+}
+
+.specs a,
+.specs a:hover {
+  color: rgba(255,255,255,0.8);
+}
+
+.container-main {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.form-box input[type="text"],
+.form-box input[type="password"],
+.form-box input[type="email"] {
+  border-radius: 0px;
+  border-color: #CCCE9C;
+}
+
+.form-box input[type="text"]:focus,
+.form-box input[type="password"]:focus,
+.form-box input[type="email"]:focus {
+  border-color: #CCCE9C;
+  box-shadow: 0px 0px;
+  outline: 0 none;
+}
+
+.form-box .btn {
+  width: 100%;
+  padding: 1.5% 0;
+  border-radius: 0px;
+  background: #2DA89C;
+  border: 1px solid #2DA89C;
+  outline: none;
+}
+.btn {
+  background-color: black;
+}
+
+ .form-box .btn:hover,
+.form-box .btn:active,
+.form-box .btn:focus,
+.form-box .btn:active:focus {
+  background-color: rgb(25,148,136);
+  border: 1px solid rgb(25,148,136);
+  color: rgb(255,255,255);
+}
+
+.form-box .btn:active,
+.form-box .btn:focus,
+.form-box .btn:active:focus {
+  outline: 0;
+}
+
+ .form-box .btn-default {
+  background-color: #CCCE9C;
+  border-color: #CCCE9C;
+  color: rgb(255, 255, 255);
+}
+
+ .form-box .btn-default:hover {
+  background-color: rgb(180,182,132);
+  border-color: rgb(180,182,132);
+  color: rgb(255, 255, 255);
+}
+
+.form-box .btn-default:active,
+.form-box .btn-default:focus,
+.form-box .btn-default:active:focus,
+.form-box .btn-default:active:hover {
+  background-color: rgb(180,182,132);
+  border-color: rgb(220,222, 172);
+  color: rgb(255, 255, 255);
+}
+
+.form-box label {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(30,96,117);
+}
+
+.form-box a {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+}
+
+.avatar {
+  width: 100%;
+  padding: 0 40% 0 0;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+.input-group {
+  margin: 10% 0;
+  width: 100%;
+}
+
+.input-group .button-group {
+  width: 200%;
+  margin-bottom: 0;
+}
+
+#file_name {
+  width: 100%;
+  border-bottom: 1px solid #CCCE9C;
+  padding: 3%;
+  text-align: center;
+}
+
+.profile-box h1 {
+  font-weight: 400;
+  color: rgb(30,96,117);
+}
+
+.profile-box input[type="text"],
+.profile-box input[type="password"],
+.profile-box input[type="email"] {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  box-shadow: 0 0;
+}
+
+.profile-box table{
+  width: 100%;
+  margin: 6% 0 3% 0;
+}
+
+.profile-box td {
+  padding-bottom: 4%;
+}
+
+.profile-box .profile-label {
+  width: 30%;
+}
+
+input[type="text"] {
+  font-family: 'Raleway', sans-serif;
+}
+
+.profile-box label {
+  font-size: 16px;
+}
+
+.profile-box .button-group .btn,
+.profile-box .button-group a {
+  padding: 3% 0;
+  font-size: 16px;
+}
+
+.profile-box .button-left {
+  padding-left: 2.8%;
+  padding-right: 0%;
+}
+
+.profile-box .button-right {
+  padding-right: 2.8%;
+  padding-left: 0%;
+}
+
+div[id$="err"] {
+  color: rgb(255,165,92);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.2%;
+  text-align: center;
+  height: 60px;
+  background-color: #CCCE9C;
+}
+
+.footer p {
+  color: rgb(255,255,255);
+  text-shadow: 1.5px 1.5px 6px rgb(180,180,180);
+}

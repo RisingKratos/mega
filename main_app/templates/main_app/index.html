@@ -1,0 +1,157 @@
+{% extends "main_app/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+    EdInHi
+{% endblock%}
+
+{% block content %}
+
+    <script>
+        $(document).ready(function (){
+            $("#click").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#specs").offset().top
+                }, 2000);
+            });
+        });
+    </script>
+    <section class="banner">
+        <h2>Mega</h2>
+
+          <h3><button class="btn btn-info" id="click"> LOL </button></h3>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.</p> -->
+    </section>
+
+    <section class="about">
+
+        <table>
+            <h1>About us</h1>
+            <tr>
+                <td>
+                    <div class="icons">
+                        &#123;
+                    </div>
+                    <h3>LOL</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                </td>
+                <td>
+                    <div class="icons">
+                        &#104;
+                    </div>
+                    <h3>LOL</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                </td>
+                <td>
+                    <div class="icons">
+                        &#112;
+                    </div>
+                    <h3>LOL</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="companies">
+        <div class="company-box">
+            <h1>Companies</h1>
+            <table>
+                <tr>
+                    <td>
+                        <a href="#">
+                            <img src="{% static "images/kazkom.png" %}">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <img src="{% static "images/KMG.png" %}">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <img src="{% static "images/NBK.png" %}">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#">
+                            <img src="{% static "images/kcell.png" %}">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <img src="{% static "images/ATFBank.png" %}">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <img src="{% static "images/bankastana.png" %}">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="specs" id="specs">
+        <div class="specs-box">
+            <h1>LOL</h1>
+            <table>
+                <tr>
+
+                    <td>
+                        <a href="#">
+                            <label>Ipsum</label>
+                            <img src="{% static "images/spec2.jpeg" %}">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <label>Dolor</label>
+                            <img src="{% static "images/spec3.jpeg" %}">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <label>Sit amet</label>
+                            <img src="{% static "images/spec4.jpeg" %}">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#">
+                            <label>Lorem</label>
+                            <img src="{% static "images/spec5.jpeg" %}">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <label>Ipsum</label>
+                            <img src="{% static "images/spec6.jpeg" %}">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <label>Dolor</label>
+                            <img src="{% static "images/spec7.jpeg" %}">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <label>Sit amet</label>
+                            <img src="{% static "images/spec8.jpeg" %}">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+{% endblock %}
