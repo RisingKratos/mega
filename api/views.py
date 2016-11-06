@@ -13,10 +13,21 @@ def login_api_view(request, email, password):
         return JsonResponse({"value" : "true"})
     return JsonResponse({"value" : "false"})
 
-def gem_api_view(request, code_id):
+def gem_api_view(request, code_id, gem_id):
     code = get_object_or_404(Code, pk=code_id)
     if code is not None:
         code.gems -= 1
         code.save()
         return JsonResponse({"value" : "true"})
+    return JsonResponse({"value" : "false"})
+
+def get_gem_api_view(request, email, password):
+    user = authenticate(username=email, password=password)
+    if user is not None:
+        login(request, user)
+        gems = request.user.abstractuser.codes.all()
+        sum = 0
+        for gem in gems:
+            sum += gem.gems
+        return JsonResponse({"value" : sum})
     return JsonResponse({"value" : "false"})

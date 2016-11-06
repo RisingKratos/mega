@@ -8,7 +8,6 @@ class Code(models.Model):
     gem_type = models.IntegerField(blank = True, null = True)
     gems = models.IntegerField(blank = True, null = True)
 
-
 class AbstractUser(models.Model):
     # Connect To Django authorization
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -22,7 +21,6 @@ class AbstractUser(models.Model):
     profile_image = models.ImageField(upload_to = 'Images/', blank = True, null = True)
     data_of_birth = models.DateField(null = True, blank = True)
     codes = models.ManyToManyField(Code, blank = True)
-
     # Django authorization
     def create_profile(sender, **kwargs):
         user = kwargs["instance"]

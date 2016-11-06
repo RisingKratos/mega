@@ -15,6 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.conf.urls.static import static
+from mega import settings
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -23,4 +26,4 @@ urlpatterns = [
     url(r'^auth/', include('registration.urls')),
     url(r'^feedback/', include('feedback.urls')),
     url(r'^api/', include('api.urls')),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
